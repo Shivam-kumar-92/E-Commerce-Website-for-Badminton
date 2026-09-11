@@ -1,0 +1,168 @@
+{
+  "strings": [
+    {
+      "id": "yonex-bg80-power",
+      "brand": "Yonex",
+      "name": "Yonex BG80 Power (0.68mm)",
+      "type": "Hard Feeling / Maximum Power Smash",
+      "gauge": "0.68mm",
+      "price": 18.00,
+      "color": "White / Orange / Neon Yellow",
+      "popular": true
+    },
+    {
+      "id": "yonex-bg65-ti",
+      "brand": "Yonex",
+      "name": "Yonex BG65 Titanium (0.70mm)",
+      "type": "All-Around / High Durability",
+      "gauge": "0.70mm",
+      "price": 14.00,
+      "color": "White / Red / Black",
+      "popular": true
+    },
+    {
+      "id": "yonex-exbolt-65",
+      "brand": "Yonex",
+      "name": "Yonex Exbolt 65 (0.65mm)",
+      "type": "Forged Fiber / Lightning Repulsion",
+      "gauge": "0.65mm",
+      "price": 19.50,
+      "color": "Yellow / Black / White",
+      "popular": true
+    },
+    {
+      "id": "yonex-aerobite-hybrid",
+      "brand": "Yonex",
+      "name": "Yonex Aerobite Hybrid (0.67mm / 0.61mm)",
+      "type": "Hybrid / Severe Spin & Cut Slices",
+      "gauge": "M: 0.67mm / C: 0.61mm",
+      "price": 22.00,
+      "color": "Red & White",
+      "popular": true
+    },
+    {
+      "id": "lining-no1-boost",
+      "brand": "Li-Ning",
+      "name": "Li-Ning No. 1 Boost (0.66mm)",
+      "type": "Crisp Sound / High Elastic Repulsion",
+      "gauge": "0.66mm",
+      "price": 16.50,
+      "color": "Sonic White / Gold",
+      "popular": false
+    },
+    {
+      "id": "victor-vbs-66-nano",
+      "brand": "Victor",
+      "name": "Victor VBS-66 Nano (0.66mm)",
+      "type": "Ultra Thin / High Rebound",
+      "gauge": "0.66mm",
+      "price": 16.00,
+      "color": "White / Fluorescent Green",
+      "popular": false
+    },
+    {
+      "id": "unstrung-frame-only",
+      "brand": "Standard",
+      "name": "Unstrung (Frame Only - Free)",
+      "type": "Ready for your local stringer",
+      "gauge": "N/A",
+      "price": 0.00,
+      "color": "N/A",
+      "popular": false
+    }
+  ],
+  "grips": [
+    {
+      "id": "yonex-super-grap-white",
+      "name": "Yonex Super Grap (Classic White)",
+      "price": 3.50,
+      "colorHex": "#FFFFFF"
+    },
+    {
+      "id": "yonex-super-grap-neon-yellow",
+      "name": "Yonex Super Grap (Electric Neon Yellow)",
+      "price": 3.50,
+      "colorHex": "#E8FF00"
+    },
+    {
+      "id": "victor-fishbone-black",
+      "name": "Victor Fishbone Cushion Grip (Stealth Black)",
+      "price": 4.50,
+      "colorHex": "#1F2937"
+    },
+    {
+      "id": "lining-tacky-cyan",
+      "name": "Li-Ning Super Tacky Overgrip (Cyan Blue)",
+      "price": 3.50,
+      "colorHex": "#06B6D4"
+    },
+    {
+      "id": "towel-grip-red",
+      "name": "Pro Tournament Cotton Towel Grip (Flame Red)",
+      "price": 5.00,
+      "colorHex": "#EF4444"
+    },
+    {
+      "id": "stock-factory-grip",
+      "name": "Original Factory Grip (No Overgrip)",
+      "price": 0.00,
+      "colorHex": "#64748B"
+    }
+  ],
+  "stencils": [
+    { "id": "none", "name": "No Stencil Logo", "price": 0.00 },
+    { "id": "yonex-red", "name": "Yonex YY Logo (Crimson Red)", "price": 4.00 },
+    { "id": "yonex-black", "name": "Yonex YY Logo (Ink Black)", "price": 4.00 },
+    { "id": "victor-blue", "name": "Victor V Logo (Royal Blue)", "price": 4.00 },
+    { "id": "lining-red", "name": "Li-Ning Flash Logo (Red)", "price": 4.00 },
+    { "id": "smashpro-lightning", "name": "SMASHPRO Lightning Bolt (Neon Green)", "price": 5.00 }
+  ],
+  "vouchers": [
+    { "code": "SMASH20", "discountPercent": 20, "description": "20% Off Tournament Launch Deal" },
+    { "code": "PROBADMINTON", "discountPercent": 15, "description": "15% Off Any Pro-Grade Racket" },
+    { "code": "FREESHIP", "discountAmount": 15, "description": "Free Express VIP Shipping" }
+  ],
+  "quizQuestions": [
+    {
+      "id": "skill_level",
+      "title": "What is your badminton skill level?",
+      "subtitle": "Helps determine the ideal racket flexibility and forgiveness",
+      "options": [
+        { "value": "beginner", "label": "Beginner / Casual Player", "desc": "Looking for easy power and sweet spot forgiveness", "flex": ["Flexible", "Medium Flex"] },
+        { "value": "intermediate", "label": "Club Player / Regular League", "desc": "Solid fundamentals, looking to enhance power and control", "flex": ["Medium Flex", "Medium-Stiff", "Stiff"] },
+        { "value": "advanced", "label": "Tournament / Elite Competitor", "desc": "Fast wrist snap, high string tension, demand surgical precision", "flex": ["Stiff", "Extra Stiff"] }
+      ]
+    },
+    {
+      "id": "court_preference",
+      "title": "Which format or court position do you play most?",
+      "subtitle": "Affects swing weight, maneuverability and balance",
+      "options": [
+        { "value": "singles", "label": "Singles Specialist", "desc": "Covering the full singles court with deep clears and heavy baseline smashes", "category": "power" },
+        { "value": "doubles_back", "label": "Doubles Backcourt Smasher", "desc": "Steep continuous downward attacks and baseline firepower", "category": "power" },
+        { "value": "doubles_front", "label": "Doubles Frontcourt / Net Playmaker", "desc": "Lightning quick reflex interceptions, net kills, and drives", "category": "speed" },
+        { "value": "all_around", "label": "All-Around / Mixed Doubles", "desc": "Balanced versatility between attack, defense, and delicate drops", "category": "control" }
+      ]
+    },
+    {
+      "id": "playstyle_goal",
+      "title": "What is your primary attacking weapon?",
+      "subtitle": "Matches your racket's balance point and aerodynamic frame",
+      "options": [
+        { "value": "heavy_smash", "label": "Devastating Jump Smashes", "desc": "I want maximum head weight to crush through defenses", "category": "power" },
+        { "value": "fast_defense", "label": "Rapid Counter-Drives & Wall Defense", "desc": "I want ultra-fast swing speed to return heavy smashes easily", "category": "speed" },
+        { "value": "pinpoint_control", "label": "Surgical Placement & Deceptive Slices", "desc": "I want shuttle dwell time for hairpin nets and tight drops", "category": "control" }
+      ]
+    },
+    {
+      "id": "weight_preference",
+      "title": "What weight class fits your stamina and wrist speed?",
+      "subtitle": "3U delivers maximum kinetic punch; 4U/5U provides agility",
+      "options": [
+        { "value": "3u", "label": "3U (88g - 90g)", "desc": "Heavy mass for maximum kinetic inertia" },
+        { "value": "4u", "label": "4U (83g - 85g)", "desc": "The global sweet spot: high power with fast maneuverability" },
+        { "value": "5u", "label": "5U / 6U (75g - 80g)", "desc": "Ultra-lightweight for effortless wrist speed and reduced arm fatigue" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+[
+  {
+    "id": "yonex-astrox-100zz",
+    "name": "Yonex Astrox 100ZZ",
+    "brand": "Yonex",
+    "series": "Astrox Series",
+    "edition": "Kurenai Red Edition",
+    "tagline": "Unleash Devastating Continuous Smash Power",
+    "price": 249.99,
+    "originalPrice": 289.99,
+    "rating": 4.9,
+    "reviewCount": 142,
+    "stock": 18,
+    "featured": true,
+    "badge": "Tour Winner's Choice",
+    "playerSignature": "Viktor Axelsen & Akane Yamaguchi",
+    "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1613918108466-292b78a8ef95?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Head Heavy",
+      "playstyleCategory": "power",
+      "balance": "Head Heavy (305mm)",
+      "flex": "Extra Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)"],
+      "gripSize": ["G5", "G6"],
+      "maxTension": "28 lbs (4U) / 29 lbs (3U)",
+      "frame": "HM Graphite + Namd + Tungsten + Black Micro Core + Nanometric",
+      "shaft": "HM Graphite + Namd (Hyper Slim Shaft)",
+      "joint": "New Built-in T-Joint",
+      "color": "Kurenai / Dark Navy"
+    },
+    "radar": {
+      "power": 98,
+      "speed": 82,
+      "control": 91,
+      "durability": 90,
+      "forgiveness": 76
+    },
+    "description": "Engineered for elite tournament athletes who demand relentless smash velocity. The Hyper Slim Shaft minimizes air resistance to maximize rotational torque, while Namd graphite across frame and shaft delivers unmatched snapback power.",
+    "highlights": [
+      "Rotational Generator System with counterbalanced weight distribution",
+      "Namd revolutionary graphite technology for explosive flex and snapback",
+      "Hyper Slim Shaft cuts through air resistance for lightning swing speed",
+      "Solid feel core reduces vibration upon high-impact smashes"
+    ]
+  },
+  {
+    "id": "yonex-nanoflare-1000z",
+    "name": "Yonex Nanoflare 1000Z",
+    "brand": "Yonex",
+    "series": "Nanoflare Series",
+    "edition": "Lightning Yellow",
+    "tagline": "World Record 565 km/h Smash Speed Aerodynamics",
+    "price": 259.99,
+    "originalPrice": 299.99,
+    "rating": 4.95,
+    "reviewCount": 98,
+    "stock": 12,
+    "featured": true,
+    "badge": "World Speed Record",
+    "playerSignature": "Satwiksairaj Rankireddy & Lakshya Sen",
+    "image": "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Head Light",
+      "playstyleCategory": "speed",
+      "balance": "Head Light (285mm)",
+      "flex": "Extra Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)"],
+      "gripSize": ["G5", "G6"],
+      "maxTension": "28 lbs (4U) / 29 lbs (3U)",
+      "frame": "HM Graphite + NANOMETRIC DR + M40X + EX-HYPER MG",
+      "shaft": "HM Graphite + Ultra PE FIBER",
+      "joint": "New Built-in T-Joint",
+      "color": "Lightning Yellow / Black"
+    },
+    "radar": {
+      "power": 90,
+      "speed": 99,
+      "control": 93,
+      "durability": 87,
+      "forgiveness": 82
+    },
+    "description": "The flagship speed weapon that shattered the world record smash speed at 565 km/h. Featuring the Sonic Flare System and AERO Frame profile, it gives players hyper-fast swing recovery and decisive drive intercepts.",
+    "highlights": [
+      "Sonic Flare System for blistering shuttle ejection speed",
+      "AERO Frame with Wide Profile for maximum aerodynamic stability",
+      "Compact Frame design reduces drag and concentrates sweet spot energy",
+      "Ultra PE Fiber shaft dampens shock while maximizing repulsion"
+    ]
+  },
+  {
+    "id": "victor-thruster-ryuga-ii",
+    "name": "Victor Thruster Ryuga II",
+    "brand": "Victor",
+    "series": "Thruster K Series",
+    "edition": "Dragon Master Pro",
+    "tagline": "Ferocious Aggression & High-Tension Dominance",
+    "price": 234.99,
+    "originalPrice": 269.99,
+    "rating": 4.85,
+    "reviewCount": 115,
+    "stock": 15,
+    "featured": true,
+    "badge": "Lee Zii Jia Weapon",
+    "playerSignature": "Lee Zii Jia",
+    "image": "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Head Heavy",
+      "playstyleCategory": "power",
+      "balance": "Head Heavy (310mm)",
+      "flex": "Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)"],
+      "gripSize": ["G5"],
+      "maxTension": "31 lbs (4U) / 32 lbs (3U)",
+      "frame": "High Resilience Modulus Graphite + HARD CORED TECHNOLOGY",
+      "shaft": "High Resilience Modulus Graphite + PYROFIL + 6.6 SHAFT",
+      "joint": "Power Ring Pro",
+      "color": "Dragon Flame Purple / Jet Black"
+    },
+    "radar": {
+      "power": 99,
+      "speed": 79,
+      "control": 88,
+      "durability": 94,
+      "forgiveness": 78
+    },
+    "description": "Equipped with Victor's innovative WES 2.0 (Whiplash Enhancement System) and Free Core synthetic handle, Thruster Ryuga II enhances anti-torsion stability and injects dragon-force whip into every attack angle.",
+    "highlights": [
+      "WES 2.0 Whiplash Enhancement System accelerates downward smash angles",
+      "PYROFIL carbon fiber from Mitsubishi for extraordinary shock absorption",
+      "Power Ring Pro integrated into handle enhances solid hitting response",
+      "Reinforced frame capable of extreme professional string tensions up to 32 lbs"
+    ]
+  },
+  {
+    "id": "lining-halbertec-9000",
+    "name": "Li-Ning Halbertec 9000",
+    "brand": "Li-Ning",
+    "series": "Halbertec Series",
+    "edition": "Emerald Cyan & Lavender",
+    "tagline": "Surgical Control & Rapid Counter-Attack Mastery",
+    "price": 259.99,
+    "originalPrice": 295.00,
+    "rating": 4.9,
+    "reviewCount": 77,
+    "stock": 10,
+    "featured": true,
+    "badge": "Yuta Watanabe Signature",
+    "playerSignature": "Yuta Watanabe",
+    "image": "https://images.unsplash.com/photo-1613918108466-292b78a8ef95?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1613918108466-292b78a8ef95?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Even Balance",
+      "playstyleCategory": "control",
+      "balance": "Even Balance (295mm)",
+      "flex": "Medium-Stiff",
+      "weightClass": ["3U (88g)", "4U (84g)"],
+      "gripSize": ["G5"],
+      "maxTension": "30 lbs (4U) / 31 lbs (3U)",
+      "frame": "Medalist Carbon + ACC-RIF Tech + T1100",
+      "shaft": "6.6mm Hard Flexible Ultra-Slim Shaft",
+      "joint": "Dynamic-Optimum Frame",
+      "color": "Emerald Cyan / Purple Violet"
+    },
+    "radar": {
+      "power": 89,
+      "speed": 92,
+      "control": 99,
+      "durability": 92,
+      "forgiveness": 90
+    },
+    "description": "Crafted for double-court wizards like Olympic medalist Yuta Watanabe. The Halbertec 9000 combines Li-Ning's 6.6mm Hard Flexible shaft with ACC-RIF high-modulus carbon to provide pinpoint accuracy for drops, slices, and deceptive cross-court returns.",
+    "highlights": [
+      "6.6mm high-elasticity slim shaft for instantaneous shuttle release",
+      "ACC-RIF carbon system guarantees razor-sharp shuttle placement",
+      "T1100 aerospace-grade graphite for sublime frame rebound resilience",
+      "All-around versatility transitioning seamlessly between offense and defense"
+    ]
+  },
+  {
+    "id": "yonex-arcsaber-11-pro",
+    "name": "Yonex Arcsaber 11 Pro",
+    "brand": "Yonex",
+    "series": "Arcsaber Series",
+    "edition": "Grayish Pearl Pro",
+    "tagline": "Legendary Shuttle Pocketing & Surgical Precision",
+    "price": 239.99,
+    "originalPrice": 275.00,
+    "rating": 4.88,
+    "reviewCount": 160,
+    "stock": 20,
+    "featured": false,
+    "badge": "All-Around Benchmark",
+    "playerSignature": "Aaron Chia & Sapsiree Taerattanachai",
+    "image": "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Even Balance",
+      "playstyleCategory": "control",
+      "balance": "Even Balance (293mm)",
+      "flex": "Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)"],
+      "gripSize": ["G5", "G6"],
+      "maxTension": "27 lbs (4U) / 28 lbs (3U)",
+      "frame": "HM Graphite + POCKETING BOOSTER + CONTROL-ASSIST BUMPER",
+      "shaft": "HM Graphite + SUPER HMG + ULTRA PE FIBER",
+      "joint": "New Built-in T-Joint",
+      "color": "Grayish Pearl / Red Accent"
+    },
+    "radar": {
+      "power": 88,
+      "speed": 88,
+      "control": 98,
+      "durability": 91,
+      "forgiveness": 93
+    },
+    "description": "The gold standard in precision and hold. Featuring Pocketing Booster elastomer lining inside the top frame and Control-Assist Bumper, Arcsaber 11 Pro holds the shuttle on the stringbed longer for micro-second directional control.",
+    "highlights": [
+      "Pocketing Booster proprietary elastomer for maximum shuttle dwell time",
+      "Enhanced frame rigidity on sides prevents frame twist during off-center hits",
+      "Control-Assist Bumper at top of frame locks grommets for true trajectory",
+      "Superb balance for doubles playmakers and strategic singles competitors"
+    ]
+  },
+  {
+    "id": "victor-auraspeed-100x",
+    "name": "Victor Auraspeed 100X",
+    "brand": "Victor",
+    "series": "Auraspeed Series",
+    "edition": "Ultra Matte Midnight",
+    "tagline": "Continuous Flat Drives & Rapid Defense Wall",
+    "price": 229.99,
+    "originalPrice": 259.99,
+    "rating": 4.82,
+    "reviewCount": 89,
+    "stock": 14,
+    "featured": false,
+    "badge": "World Champions Daddies Choice",
+    "playerSignature": "Mohammad Ahsan & Hendra Setiawan",
+    "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Head Light",
+      "playstyleCategory": "speed",
+      "balance": "Head Light / Even (290mm)",
+      "flex": "Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)"],
+      "gripSize": ["G5"],
+      "maxTension": "29 lbs (4U) / 30 lbs (3U)",
+      "frame": "High Resilience Modulus Graphite + Nano Fortify TR + HARD CORED",
+      "shaft": "High Resilience Modulus Graphite + PYROFIL + 6.8 SHAFT",
+      "joint": "FREE CORE Synthetic Handle",
+      "color": "Matte Raven Black / Royal Gold"
+    },
+    "radar": {
+      "power": 86,
+      "speed": 97,
+      "control": 94,
+      "durability": 89,
+      "forgiveness": 88
+    },
+    "description": "Engineered for rapid reflex counter-drives and front-court interception. Equipped with the revolutionary FREE CORE synthetic handle, it frees shaft rebound to generate snappy drives effortlessly.",
+    "highlights": [
+      "FREE CORE synthetic handle engineered with computerized simulation",
+      "DYNAMIC-SWORD aerodynamic frame slices cleanly through air",
+      "Rebound Shield technology optimizes frame elasticity and rebound angle",
+      "Ideal for quick doubles defenders and fast-paced counter punchers"
+    ]
+  },
+  {
+    "id": "lining-axforce-100",
+    "name": "Li-Ning Axforce 100",
+    "brand": "Li-Ning",
+    "series": "Axforce Series",
+    "edition": "Golden Kirin Beast",
+    "tagline": "Heavy Artillery Explosive Baseline Smash",
+    "price": 269.99,
+    "originalPrice": 310.00,
+    "rating": 4.92,
+    "reviewCount": 64,
+    "stock": 8,
+    "featured": true,
+    "badge": "Ultra Smasher Flagship",
+    "playerSignature": "Loh Kean Yew",
+    "image": "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Head Heavy",
+      "playstyleCategory": "power",
+      "balance": "Super Head Heavy (308mm)",
+      "flex": "Extra Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)", "5U (78g)"],
+      "gripSize": ["G5"],
+      "maxTension": "30 lbs (4U) / 31 lbs (3U)",
+      "frame": "M50 Super Carbon + TB NANO + Super Light Technology",
+      "shaft": "6.0mm Ultra-Slim Hard Flexible Shaft",
+      "joint": "Wing Stabilizer Tech",
+      "color": "Obsidian Gold / Mythic Kirin"
+    },
+    "radar": {
+      "power": 99,
+      "speed": 81,
+      "control": 89,
+      "durability": 95,
+      "forgiveness": 77
+    },
+    "description": "Li-Ning's most feared powerhouse racket. Packed with M50 Super Carbon and a world-class 6.0mm ultra-slim shaft, the Axforce 100 transforms full-body rotational energy into high-decibel smash explosions.",
+    "highlights": [
+      "Industry-leading 6.0mm Ultra-Slim Shaft for minimal drag and explosive snap",
+      "M50 Super Carbon creates extreme tensile strength under high flex stress",
+      "Box Wing frame geometry maximizes stability upon heavy contact",
+      "Kirin mythic inspired artwork with laser-etched accents"
+    ]
+  },
+  {
+    "id": "yonex-astrox-88d-pro",
+    "name": "Yonex Astrox 88D Pro (Gen 3)",
+    "brand": "Yonex",
+    "series": "Astrox Series",
+    "edition": "Silver & Black Carbon",
+    "tagline": "Backcourt Doubles Attack Specialist",
+    "price": 244.99,
+    "originalPrice": 279.99,
+    "rating": 4.87,
+    "reviewCount": 103,
+    "stock": 16,
+    "featured": false,
+    "badge": "Doubles Backcourt Dominator",
+    "playerSignature": "Kang Min Hyuk & Fajar Alfian",
+    "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Head Heavy",
+      "playstyleCategory": "power",
+      "balance": "Head Heavy (303mm)",
+      "flex": "Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)"],
+      "gripSize": ["G5", "G6"],
+      "maxTension": "28 lbs (4U) / 29 lbs (3U)",
+      "frame": "HM Graphite + CFR + Tungsten",
+      "shaft": "HM Graphite + 2G-Namd FLEX FORCE + Ultra PE Fiber",
+      "joint": "New Built-in T-Joint",
+      "color": "Silver / Black / Deep Cyan"
+    },
+    "radar": {
+      "power": 96,
+      "speed": 85,
+      "control": 90,
+      "durability": 92,
+      "forgiveness": 85
+    },
+    "description": "Specifically engineered for doubles backcourt players aiming to break opponent defenses with continuous steep smashes. The 3rd Gen 88D Pro features 2G-Namd Flex Force and CFR (Carbon Fiber Resin) for devastating power.",
+    "highlights": [
+      "2G-Namd Flex Force maximizes flex snapback upon high impact",
+      "Concentrated frame flex zone transfers maximum inertia into shuttle",
+      "Rotational Generator System allows fluid transition between shots",
+      "Optimized grommet pattern enhances string bed dwell time"
+    ]
+  },
+  {
+    "id": "yonex-astrox-88s-pro",
+    "name": "Yonex Astrox 88S Pro (Gen 3)",
+    "brand": "Yonex",
+    "series": "Astrox Series",
+    "edition": "Silver & Emerald",
+    "tagline": "Frontcourt Doubles Net Control & Interception",
+    "price": 244.99,
+    "originalPrice": 279.99,
+    "rating": 4.86,
+    "reviewCount": 92,
+    "stock": 14,
+    "featured": false,
+    "badge": "Doubles Frontcourt Specialist",
+    "playerSignature": "Seo Seung Jae & Muhammad Rian Ardianto",
+    "image": "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Even Balance",
+      "playstyleCategory": "control",
+      "balance": "Slight Head Heavy / Even (296mm)",
+      "flex": "Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)"],
+      "gripSize": ["G5", "G6"],
+      "maxTension": "28 lbs (4U) / 29 lbs (3U)",
+      "frame": "HM Graphite + CFR + Tungsten",
+      "shaft": "HM Graphite + 2G-Namd FLEX FORCE + Ultra PE Fiber",
+      "joint": "New Built-in T-Joint",
+      "color": "Silver / Emerald Green"
+    },
+    "radar": {
+      "power": 90,
+      "speed": 93,
+      "control": 96,
+      "durability": 90,
+      "forgiveness": 89
+    },
+    "description": "Master the front of the court with hyper-fast net kills, pushes, and deceptive blocks. Slightly shorter overall length enhances maneuverability for rapid reflex exchanges.",
+    "highlights": [
+      "5mm shorter overall racket length for lightning-fast swing recovery",
+      "All-around frame flexibility for delicate touch and net control",
+      "Rotational Generator System maintains seamless attacking rhythm",
+      "Pro-grade feel tuned for fast doubles tempo"
+    ]
+  },
+  {
+    "id": "mizuno-fortius-11-quick",
+    "name": "Mizuno Fortius 11 Quick",
+    "brand": "Mizuno",
+    "series": "Fortius Series",
+    "edition": "Black & Gold Elite",
+    "tagline": "Japanese Precision Engineering & Instant Rebound",
+    "price": 219.99,
+    "originalPrice": 249.99,
+    "rating": 4.79,
+    "reviewCount": 51,
+    "stock": 11,
+    "featured": false,
+    "badge": "Made in Japan Flagship",
+    "playerSignature": "Mohammad Ahsan (Tournament Edition)",
+    "image": "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Head Heavy",
+      "playstyleCategory": "power",
+      "balance": "Head Heavy (300mm)",
+      "flex": "Stiff",
+      "weightClass": ["4U (83g)"],
+      "gripSize": ["G5", "G6"],
+      "maxTension": "27 lbs",
+      "frame": "High Modulus Graphite + Trans Force Frame + Beyond Force System",
+      "shaft": "High Modulus Graphite + M Fusion",
+      "joint": "T-Joint Compound System",
+      "color": "Obsidian Black / Champagne Gold"
+    },
+    "radar": {
+      "power": 94,
+      "speed": 88,
+      "control": 92,
+      "durability": 91,
+      "forgiveness": 84
+    },
+    "description": "Engineered with Japanese precision, the Fortius 11 Quick features Mizuno's Beyond Force System and Trans Force Frame for maximum kinetic power transfer on drive shots and quick smashes.",
+    "highlights": [
+      "Trans Force Frame combines stiffness with high energy return",
+      "Beyond Force System optimizes weight balance across racket frame",
+      "M-Fusion lightweight carbon bonding provides crisp impact feedback",
+      "Hand-inspected Japanese manufacturing standard"
+    ]
+  },
+  {
+    "id": "apacs-z-ziggler",
+    "name": "Apacs Z-Ziggler",
+    "brand": "Apacs",
+    "series": "Z-Series",
+    "edition": "Matte Stealth Edition",
+    "tagline": "Extreme High-Tension Smash Weapon Under $100",
+    "price": 79.99,
+    "originalPrice": 109.99,
+    "rating": 4.75,
+    "reviewCount": 210,
+    "stock": 25,
+    "featured": false,
+    "badge": "Best Value Power Smasher",
+    "playerSignature": "Club Competitor Champion",
+    "image": "https://images.unsplash.com/photo-1613918108466-292b78a8ef95?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1613918108466-292b78a8ef95?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Head Heavy",
+      "playstyleCategory": "power",
+      "balance": "Head Heavy (295mm)",
+      "flex": "Medium Flex",
+      "weightClass": ["4U (85g)"],
+      "gripSize": ["G5"],
+      "maxTension": "38 lbs (World Record String Tension rating)",
+      "frame": "Hi Modulus Graphite + Triple Speed System + Compact Frame",
+      "shaft": "Hi Modulus Graphite + Extra Slim 6.4mm",
+      "joint": "Integrated Carbon Joint",
+      "color": "Matte Black / Orange Flame"
+    },
+    "radar": {
+      "power": 92,
+      "speed": 84,
+      "control": 82,
+      "durability": 98,
+      "forgiveness": 80
+    },
+    "description": "The cult-favorite power racket capable of stringing up to an astonishing 38 lbs tension. Compact frame design creates lightning-fast swing speed and massive punch for club champions.",
+    "highlights": [
+      "Reinforced frame handles extreme string tensions up to 38 lbs",
+      "Extra Slim 6.4mm shaft reduces aerodynamic drag",
+      "Triple Speed System combines heavy smashes with speedy recovery",
+      "Unbeatable performance-to-price ratio in the badminton world"
+    ]
+  },
+  {
+    "id": "victor-drivex-9x",
+    "name": "Victor DriveX 9X",
+    "brand": "Victor",
+    "series": "DriveX Series",
+    "edition": "Metallic Blue Pro",
+    "tagline": "Dynamic Control & Fluid Power Distribution",
+    "price": 214.99,
+    "originalPrice": 245.00,
+    "rating": 4.80,
+    "reviewCount": 68,
+    "stock": 13,
+    "featured": false,
+    "badge": "Tactical Playmaker",
+    "playerSignature": "Greysia Polii & Apriyani Rahayu (Olympic Gold Edition)",
+    "image": "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "playstyle": "Even Balance",
+      "playstyleCategory": "control",
+      "balance": "Even Balance (293mm)",
+      "flex": "Stiff",
+      "weightClass": ["3U (88g)", "4U (83g)"],
+      "gripSize": ["G5"],
+      "maxTension": "28 lbs (4U) / 29 lbs (3U)",
+      "frame": "High Resilience Modulus Graphite + Nano Fortify TR + HARD CORED",
+      "shaft": "High Resilience Modulus Graphite + PYROFIL + 6.6 SHAFT",
+      "joint": "FREE CORE Synthetic Handle",
+      "color": "Metallic Ocean Blue / Platinum"
+    },
+    "radar": {
+      "power": 87,
+      "speed": 91,
+      "control": 96,
+      "durability": 90,
+      "forgiveness": 91
+    },
+    "description": "Crafted for complete court dominance and effortless clears. Dynamic-Hex frame structure optimizes airflow while maintaining rock-solid stability during aggressive baseline rallies.",
+    "highlights": [
+      "Dynamic-Hex frame geometry balances speed with anti-torsion torque",
+      "FREE CORE handle maximizes shaft flexing fluidity and wrist comfort",
+      "Balanced swing weight suitable for both men's and women's elite doubles",
+      "Crisp, satisfying impact sound and clear shuttle response"
+    ]
+  }
+]
