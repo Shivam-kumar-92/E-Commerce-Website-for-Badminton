@@ -139,6 +139,16 @@ export default function Navbar({
               Track Order
             </button>
 
+            <a
+              href="/aura/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-2 rounded-xl text-xs font-extrabold text-cyan hover:bg-cyan/10 border border-cyan/40 flex items-center gap-1.5 transition-all shadow-glow-cyan"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-cyan animate-pulse" />
+              AURA AI
+            </a>
+
             <button
               onClick={onOpenAdmin}
               className="px-2.5 py-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 hover:bg-white/5 transition-all"
@@ -215,6 +225,16 @@ export default function Navbar({
               >
                 <Truck className="w-4 h-4" /> Track Order
               </button>
+
+              <a
+                href="/aura/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="col-span-2 p-2.5 rounded-xl bg-gradient-to-r from-cyan-950 to-purple-950 border border-cyan/40 text-center text-sm font-extrabold text-cyan flex items-center justify-center gap-2 shadow-glow-cyan"
+              >
+                <Sparkles className="w-4 h-4 text-cyan animate-pulse" />
+                Launch AURA AI Mobile Companion
+              </a>
             </div>
             
             <button

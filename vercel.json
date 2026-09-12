@@ -4,7 +4,15 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/aura/(.*)",
+      "destination": "/aura/$1"
+    },
+    {
+      "source": "/aura",
+      "destination": "/aura/index.html"
+    },
+    {
+      "source": "/((?!aura).*)",
       "destination": "/index.html"
     }
   ]
