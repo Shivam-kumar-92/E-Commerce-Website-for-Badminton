@@ -12,6 +12,8 @@ import AdminDashboard from './components/AdminDashboard.jsx';
 import FiltersSidebar from './components/FiltersSidebar.jsx';
 import Footer from './components/Footer.jsx';
 import MobileBottomNav from './components/MobileBottomNav.jsx';
+import fallbackProducts from './data/products.json';
+import fallbackOptions from './data/options.json';
 import { 
   Sparkles, 
   Layers, 
@@ -96,14 +98,22 @@ export default function App() {
           fetch('/api/featured'),
           fetch('/api/brands')
         ]);
-        const optData = await optRes.json();
-        const featData = await featRes.json();
-        const brandData = await brandRes.json();
-        setOptions(optData);
-        setFeaturedProducts(featData);
-        setBrands(brandData);
+        if (optRes.ok && featRes.ok && brandRes.ok) {
+          const optData = await optRes.json();
+          const featData = await featRes.json();
+          const brandData = await brandRes.json();
+          setOptions(optData);
+          setFeaturedProducts(featData);
+          setBrands(brandData);
+          return;
+        }
+        throw new Error('API unavailable');
       } catch (err) {
-        console.error('Initial data fetch error:', err);
+        // Resilient fallback for Vercel / static hosting
+        setOptions(fallbackOptions);
+        setFeaturedProducts(fallbackProducts.filter(p => p.featured || p.badge));
+        const uniqueBrands = [...new Set(fallbackProducts.map(p => p.brand))];
+        setBrands(uniqueBrands);
       }
     };
     initData();
@@ -123,10 +133,52 @@ export default function App() {
       if (sortBy) params.append('sort', sortBy);
 
       const res = await fetch(`/api/products?${params.toString()}`);
-      const data = await res.json();
-      setProducts(data.products || []);
+      if (res.ok) {
+        const data = await res.json();
+        setProducts(data.products || []);
+        return;
+      }
+      throw new Error('Using fallback filtering');
     } catch (err) {
-      console.error('Products fetch error:', err);
+      // Resilient client-side filtering fallback for Vercel
+      let filtered = [...fallbackProducts];
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        filtered = filtered.filter(p => 
+          p.name.toLowerCase().includes(q) || 
+          p.brand.toLowerCase().includes(q) ||
+          p.specs?.playstyle?.toLowerCase().includes(q)
+        );
+      }
+      if (selectedBrand !== 'all') {
+        filtered = filtered.filter(p => p.brand.toLowerCase() === selectedBrand.toLowerCase());
+      }
+      if (selectedPlaystyle !== 'all') {
+        filtered = filtered.filter(p => p.specs?.playstyleCategory === selectedPlaystyle);
+      }
+      if (selectedFlex !== 'all') {
+        filtered = filtered.filter(p => p.specs?.flex?.toLowerCase().includes(selectedFlex.toLowerCase()));
+      }
+      if (selectedWeight !== 'all') {
+        filtered = filtered.filter(p => p.specs?.weightClass?.includes(selectedWeight));
+      }
+      if (priceRange < 350) {
+        filtered = filtered.filter(p => p.price <= priceRange);
+      }
+      if (sortBy === 'power') {
+        filtered.sort((a, b) => (b.radar?.power || 0) - (a.radar?.power || 0));
+      } else if (sortBy === 'speed') {
+        filtered.sort((a, b) => (b.radar?.speed || 0) - (a.radar?.speed || 0));
+      } else if (sortBy === 'control') {
+        filtered.sort((a, b) => (b.radar?.control || 0) - (a.radar?.control || 0));
+      } else if (sortBy === 'price-asc') {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (sortBy === 'price-desc') {
+        filtered.sort((a, b) => b.price - a.price);
+      } else if (sortBy === 'rating') {
+        filtered.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+      }
+      setProducts(filtered);
     } finally {
       setLoading(false);
     }
