@@ -84,7 +84,7 @@ export default function CompareModal({
                   <div>
                     <span className="text-[10px] font-black uppercase text-volt">{item.brand}</span>
                     <h4 className="font-extrabold text-sm text-white line-clamp-1">{item.name}</h4>
-                    <p className="text-lg font-black text-white font-mono mt-1">${item.price}</p>
+                    <p className="text-lg font-black text-white font-mono mt-1">Rs {item.price}</p>
                   </div>
 
                   <button

@@ -73,7 +73,7 @@ export default function CartDrawer({
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden bg-dark-950/80 backdrop-blur-sm animate-in fade-in">
-      <div className="absolute inset-y-0 right-0 max-w-full flex pl-10">
+      <div className="absolute inset-y-0 right-0 max-w-full flex pl-0 sm:pl-10">
         <div className="w-screen max-w-md glass-panel bg-dark-900 border-l border-slate-700/80 flex flex-col justify-between shadow-2xl">
           
           {/* Drawer Header */}
@@ -175,7 +175,7 @@ export default function CartDrawer({
 
                     <div className="text-right">
                       <span className="font-black text-sm text-white font-mono">
-                        ${((item.itemTotal || item.basePrice) * item.quantity).toFixed(2)}
+                        Rs {((item.itemTotal || item.basePrice) * item.quantity).toFixed(2)}
                       </span>
                     </div>
                   </div>
@@ -232,23 +232,23 @@ export default function CartDrawer({
               <div className="space-y-1.5 text-xs text-slate-300 pt-1">
                 <div className="flex justify-between">
                   <span>Workshop Subtotal</span>
-                  <span className="font-mono text-white">${subtotal.toFixed(2)}</span>
+                  <span className="font-mono text-white">Rs {subtotal.toFixed(2)}</span>
                 </div>
                 {discountAmount > 0 && (
                   <div className="flex justify-between text-volt">
                     <span>Voucher Discount</span>
-                    <span className="font-mono">-${discountAmount.toFixed(2)}</span>
+                    <span className="font-mono">-Rs {discountAmount.toFixed(2)}</span>
                   </div>
                 )}
                 <div className="flex justify-between">
                   <span>Courier Delivery</span>
                   <span className="font-mono">
-                    {shippingFee === 0 ? <span className="text-emerald-400 font-bold">FREE (VIP Pro)</span> : `$${shippingFee.toFixed(2)}`}
+                    {shippingFee === 0 ? <span className="text-emerald-400 font-bold">FREE (VIP Pro)</span> : `Rs ${shippingFee.toFixed(2)}`}
                   </span>
                 </div>
                 <div className="flex justify-between text-sm font-black text-white pt-2 border-t border-slate-800">
                   <span>Total Due</span>
-                  <span className="text-xl font-mono text-volt">${finalTotal.toFixed(2)}</span>
+                  <span className="text-xl font-mono text-volt">Rs {finalTotal.toFixed(2)}</span>
                 </div>
               </div>
 

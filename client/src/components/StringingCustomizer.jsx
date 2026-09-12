@@ -114,7 +114,7 @@ export default function StringingCustomizer({
             Tournament String Model
           </label>
           <span className="text-xs text-volt font-bold">
-            {selectedString.price > 0 ? `+$${selectedString.price.toFixed(2)}` : 'Included'}
+            {selectedString.price > 0 ? `+Rs ${selectedString.price.toFixed(2)}` : 'Included'}
           </span>
         </div>
 
@@ -137,7 +137,7 @@ export default function StringingCustomizer({
               <div className="text-[10px] text-slate-400 mt-1 flex items-center justify-between">
                 <span>{str.type}</span>
                 <span className="font-mono text-volt font-semibold">
-                  {str.price === 0 ? 'Free' : `$${str.price}`}
+                  {str.price === 0 ? 'Free' : `Rs ${str.price}`}
                 </span>
               </div>
             </button>
@@ -216,7 +216,7 @@ export default function StringingCustomizer({
                   <span className="truncate">{grp.name}</span>
                 </div>
                 <span className="font-mono text-[10px] text-slate-400">
-                  {grp.price > 0 ? `+$${grp.price}` : 'Free'}
+                  {grp.price > 0 ? `+Rs ${grp.price}` : 'Free'}
                 </span>
               </button>
             ))}
@@ -242,7 +242,7 @@ export default function StringingCustomizer({
               >
                 <span className="truncate">{stc.name}</span>
                 <span className="font-mono text-[10px] text-slate-400">
-                  {stc.price > 0 ? `+$${stc.price}` : 'Free'}
+                  {stc.price > 0 ? `+Rs ${stc.price}` : 'Free'}
                 </span>
               </button>
             ))}
@@ -267,7 +267,7 @@ export default function StringingCustomizer({
             <span className="text-[11px] text-slate-400">Calibrated & boxed within 4 hours by Master Stringer</span>
           </div>
         </div>
-        <span className="text-xs font-mono font-bold text-volt">+$9.99</span>
+        <span className="text-xs font-mono font-bold text-volt">+Rs 9.99</span>
       </div>
 
       {/* 6. Total Summary & Add To Cart Button */}
@@ -275,7 +275,7 @@ export default function StringingCustomizer({
         <div>
           <span className="text-xs text-slate-400 block font-medium">Configured Weapon Total:</span>
           <div className="text-3xl font-black font-mono text-white flex items-baseline gap-2">
-            <span>${totalPrice.toFixed(2)}</span>
+            <span>Rs {totalPrice.toFixed(2)}</span>
             <span className="text-xs text-slate-500 font-normal font-sans">(Tax incl.)</span>
           </div>
         </div>

@@ -11,6 +11,7 @@ import OrderTrackingModal from './components/OrderTrackingModal.jsx';
 import AdminDashboard from './components/AdminDashboard.jsx';
 import FiltersSidebar from './components/FiltersSidebar.jsx';
 import Footer from './components/Footer.jsx';
+import MobileBottomNav from './components/MobileBottomNav.jsx';
 import { 
   Sparkles, 
   Layers, 
@@ -39,6 +40,17 @@ export default function App() {
   const [selectedWeight, setSelectedWeight] = useState('all');
   const [priceRange, setPriceRange] = useState(350);
   const [sortBy, setSortBy] = useState('featured'); // 'featured' | 'power' | 'speed' | 'price-asc' | 'price-desc' | 'rating'
+  const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
+
+  // Computed Active Filter Count for Mobile Indicator
+  const activeFilterCount = [
+    selectedBrand !== 'all',
+    selectedPlaystyle !== 'all',
+    selectedFlex !== 'all',
+    selectedWeight !== 'all',
+    priceRange < 350,
+    searchQuery.trim().length > 0
+  ].filter(Boolean).length;
 
   // App Navigation & Modals
   const [activeTab, setActiveTab] = useState('shop');
@@ -222,11 +234,11 @@ export default function App() {
   const cartCount = cart.reduce((sum, it) => sum + it.quantity, 0);
 
   return (
-    <div className="min-h-screen flex flex-col bg-dark-950 text-slate-100 font-sans selection:bg-volt selection:text-dark-950">
+    <div className="min-h-screen flex flex-col bg-dark-950 text-slate-100 font-sans selection:bg-volt selection:text-dark-950 pb-20 lg:pb-0">
       
       {/* Toast Notification */}
       {toastMessage && (
-        <div className="fixed bottom-6 right-6 z-50 p-4 rounded-2xl glass-panel bg-dark-900 border border-volt/50 shadow-glow-volt text-xs font-bold text-white flex items-center gap-3 animate-in slide-in-from-bottom-5">
+        <div className="fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-50 p-4 rounded-2xl glass-panel bg-dark-900 border border-volt/50 shadow-glow-volt text-xs font-bold text-white flex items-center gap-3 animate-in slide-in-from-bottom-5">
           <div className="w-6 h-6 rounded-full bg-volt text-dark-950 flex items-center justify-center font-black">
             ✓
           </div>
@@ -303,20 +315,34 @@ export default function App() {
       <main id="catalog" className="flex-1 max-w-7xl mx-auto w-full py-10 px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Playstyle Quick Filter Category Pills & Sort Bar */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-4 border-b border-slate-800">
           
-          {/* Quick Playstyle Tabs */}
-          <div className="flex flex-wrap items-center gap-2">
+          {/* Quick Playstyle Tabs + Mobile Filter Trigger */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none w-full md:w-auto">
+            {/* Mobile Filter Sheet Button */}
+            <button
+              onClick={() => setIsMobileFiltersOpen(true)}
+              className="lg:hidden shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-dark-900 border border-slate-700 text-white text-xs font-bold active:scale-95 transition-all shadow-sm"
+            >
+              <SlidersHorizontal className="w-3.5 h-3.5 text-volt" />
+              <span>Filters</span>
+              {activeFilterCount > 0 && (
+                <span className="bg-volt text-dark-950 font-black text-[10px] px-1.5 py-0.2 rounded-full shadow-glow-volt">
+                  {activeFilterCount}
+                </span>
+              )}
+            </button>
+
             {[
               { id: 'all', label: 'All Weapons' },
-              { id: 'power', label: '💥 Head Heavy Smash' },
-              { id: 'speed', label: '⚡ Head Light Speed' },
-              { id: 'control', label: '🎯 Even Balance Control' }
+              { id: 'power', label: '💥 Head Heavy' },
+              { id: 'speed', label: '⚡ Head Light' },
+              { id: 'control', label: '🎯 Even Balance' }
             ].map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setSelectedPlaystyle(tab.id)}
-                className={`px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wide transition-all ${
+                className={`shrink-0 px-3.5 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wide transition-all ${
                   selectedPlaystyle === tab.id
                     ? 'bg-white text-dark-950 font-black shadow-lg'
                     : 'bg-dark-900 text-slate-400 hover:text-white border border-slate-800'
@@ -328,18 +354,20 @@ export default function App() {
           </div>
 
           {/* Sorting Dropdown */}
-          <div className="flex items-center gap-2">
-            <ArrowUpDown className="w-4 h-4 text-slate-400" />
-            <span className="text-xs text-slate-400 font-bold uppercase">Sort By:</span>
+          <div className="flex items-center justify-between md:justify-end gap-2 w-full md:w-auto pt-1 md:pt-0">
+            <div className="flex items-center gap-1.5 text-slate-400">
+              <ArrowUpDown className="w-3.5 h-3.5" />
+              <span className="text-xs font-bold uppercase">Sort:</span>
+            </div>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="bg-dark-900 border border-slate-700 text-white rounded-xl px-3 py-1.5 text-xs font-bold focus:outline-none focus:border-volt"
+              className="flex-1 md:flex-initial bg-dark-900 border border-slate-700 text-white rounded-xl px-3 py-2 text-xs font-bold focus:outline-none focus:border-volt"
             >
-              <option value="featured">Featured / Tournament Spotlight</option>
-              <option value="power">💥 Highest Smash Power</option>
-              <option value="speed">⚡ Highest Swing Speed</option>
-              <option value="control">🎯 Highest Precision Control</option>
+              <option value="featured">Featured / Spotlight</option>
+              <option value="power">💥 Highest Power</option>
+              <option value="speed">⚡ Highest Speed</option>
+              <option value="control">🎯 Highest Control</option>
               <option value="price-asc">Price: Low to High</option>
               <option value="price-desc">Price: High to Low</option>
               <option value="rating">Top Customer Rated</option>
@@ -351,22 +379,45 @@ export default function App() {
         {/* Content Layout: Sidebar + Product Grid */}
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           
-          {/* Filter Sidebar */}
-          <FiltersSidebar
-            selectedBrand={selectedBrand}
-            setSelectedBrand={setSelectedBrand}
-            selectedPlaystyle={selectedPlaystyle}
-            setSelectedPlaystyle={setSelectedPlaystyle}
-            selectedFlex={selectedFlex}
-            setSelectedFlex={setSelectedFlex}
-            selectedWeight={selectedWeight}
-            setSelectedWeight={setSelectedWeight}
-            priceRange={priceRange}
-            setPriceRange={setPriceRange}
-            onResetFilters={handleResetFilters}
-            brands={brands}
-            totalResults={products.length}
-          />
+          {/* Desktop Filter Sidebar */}
+          <div className="hidden lg:block shrink-0">
+            <FiltersSidebar
+              selectedBrand={selectedBrand}
+              setSelectedBrand={setSelectedBrand}
+              selectedPlaystyle={selectedPlaystyle}
+              setSelectedPlaystyle={setSelectedPlaystyle}
+              selectedFlex={selectedFlex}
+              setSelectedFlex={setSelectedFlex}
+              selectedWeight={selectedWeight}
+              setSelectedWeight={setSelectedWeight}
+              priceRange={priceRange}
+              setPriceRange={setPriceRange}
+              onResetFilters={handleResetFilters}
+              brands={brands}
+              totalResults={products.length}
+            />
+          </div>
+
+          {/* Mobile Filter Drawer */}
+          {isMobileFiltersOpen && (
+            <FiltersSidebar
+              isMobileDrawer={true}
+              onCloseMobileDrawer={() => setIsMobileFiltersOpen(false)}
+              selectedBrand={selectedBrand}
+              setSelectedBrand={setSelectedBrand}
+              selectedPlaystyle={selectedPlaystyle}
+              setSelectedPlaystyle={setSelectedPlaystyle}
+              selectedFlex={selectedFlex}
+              setSelectedFlex={setSelectedFlex}
+              selectedWeight={selectedWeight}
+              setSelectedWeight={setSelectedWeight}
+              priceRange={priceRange}
+              setPriceRange={setPriceRange}
+              onResetFilters={handleResetFilters}
+              brands={brands}
+              totalResults={products.length}
+            />
+          )}
 
           {/* Product Grid */}
           <div className="flex-1 w-full">
@@ -392,7 +443,7 @@ export default function App() {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                 {products.map(prod => (
                   <ProductCard
                     key={prod.id}
@@ -410,9 +461,9 @@ export default function App() {
 
       </main>
 
-      {/* Floating Comparison Tray (Sticky if items selected) */}
+      {/* Floating Comparison Tray (Offset on mobile so bottom bar doesn't block it) */}
       {compareList.length > 0 && !isCompareOpen && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 glass-panel bg-dark-900/95 border border-volt/40 shadow-glow-volt rounded-2xl p-3 px-5 flex items-center gap-4 animate-in slide-in-from-bottom-6">
+        <div className="fixed bottom-20 md:bottom-6 left-1/2 -translate-x-1/2 z-40 glass-panel bg-dark-900/95 border border-volt/40 shadow-glow-volt rounded-2xl p-3 px-5 flex items-center gap-4 animate-in slide-in-from-bottom-6">
           <div className="flex items-center gap-2">
             <Layers className="w-4 h-4 text-volt" />
             <span className="text-xs font-black text-white">
@@ -527,6 +578,17 @@ export default function App() {
         isOpen={isAdminOpen}
         onClose={() => setIsAdminOpen(false)}
         onProductChanged={() => fetchProducts()}
+      />
+
+      {/* 8. Mobile Sticky Bottom Navigation Bar */}
+      <MobileBottomNav
+        cartCount={cartCount}
+        onOpenCart={() => setIsCartOpen(true)}
+        compareCount={compareList.length}
+        onOpenCompare={() => setIsCompareOpen(true)}
+        onOpenQuiz={() => setIsQuizOpen(true)}
+        onOpenMobileFilters={() => setIsMobileFiltersOpen(true)}
+        activeFilterCount={activeFilterCount}
       />
 
     </div>

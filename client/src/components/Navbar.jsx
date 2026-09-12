@@ -31,15 +31,15 @@ export default function Navbar({
   return (
     <header className="sticky top-0 z-40 w-full">
       {/* Top Notification Announcement Bar */}
-      <div className="bg-gradient-to-r from-emerald-950 via-dark-900 to-cyan-950 border-b border-emerald-500/20 px-4 py-1.5 text-xs text-center text-slate-300 flex items-center justify-center gap-3">
-        <span className="inline-flex items-center gap-1.5 font-bold text-volt">
+      <div className="bg-gradient-to-r from-emerald-950 via-dark-900 to-cyan-950 border-b border-emerald-500/20 px-3 py-1.5 text-[11px] sm:text-xs text-center text-slate-300 flex items-center justify-center gap-2 sm:gap-3">
+        <span className="inline-flex items-center gap-1 font-bold text-volt whitespace-nowrap">
           <Zap className="w-3.5 h-3.5 text-volt animate-bounce" />
-          TOURNAMENT SEASON DROP:
+          <span className="hidden sm:inline">TOURNAMENT SEASON DROP:</span>
         </span>
-        <span>Use code <code className="bg-volt/10 text-volt px-1.5 py-0.5 rounded font-mono font-bold border border-volt/30">SMASH20</code> for 20% OFF + Free Pro Stringing & Stencil</span>
+        <span className="truncate">Use code <code className="bg-volt/10 text-volt px-1.5 py-0.5 rounded font-mono font-bold border border-volt/30">SMASH20</code> for 20% OFF + Free Pro Stringing</span>
         <span className="hidden md:inline-block text-slate-500">•</span>
         <span className="hidden md:inline-flex items-center gap-1 text-slate-300">
-          <ShieldCheck className="w-3.5 h-3.5 text-cyan" /> 100% Authorized Genuine Rackets
+          <ShieldCheck className="w-3.5 h-3.5 text-cyan" /> 100% Genuine Rackets
         </span>
       </div>
 
@@ -160,7 +160,7 @@ export default function Navbar({
               </span>
               {cartTotal > 0 && (
                 <span className="hidden md:inline text-xs font-black text-dark-950 border-l border-dark-950/20 pl-2">
-                  ${cartTotal.toFixed(2)}
+                  Rs {cartTotal.toFixed(2)}
                 </span>
               )}
             </button>

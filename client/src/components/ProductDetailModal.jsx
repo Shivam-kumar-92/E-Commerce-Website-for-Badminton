@@ -85,7 +85,7 @@ export default function ProductDetailModal({
                 className="w-full h-full object-cover rounded-xl"
               />
               <div className="absolute top-3 right-3 bg-dark-950/80 px-2.5 py-1 rounded-lg border border-white/10 text-xs font-mono text-volt font-bold">
-                ${product.price}
+                Rs {product.price}
               </div>
             </div>
 

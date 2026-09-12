@@ -33,8 +33,8 @@ export default function RadarChart({ stats = { power: 90, speed: 85, control: 90
   }).join(' ');
 
   return (
-    <div className="flex flex-col items-center justify-center relative">
-      <svg width={size} height={size} className="overflow-visible">
+    <div className="flex flex-col items-center justify-center relative w-full overflow-hidden">
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="max-w-full h-auto overflow-visible">
         {/* Background Grid Concentric Polygons */}
         {levels.map((level, lvlIdx) => {
           const gridPoints = axes.map((_, index) => {

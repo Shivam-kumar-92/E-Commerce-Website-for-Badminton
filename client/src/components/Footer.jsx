@@ -34,7 +34,7 @@ export default function Footer({ onOpenQuiz, onOpenTracking, onFilterBrand }) {
             </div>
             <div>
               <h4 className="font-extrabold text-white text-xs">Global Pro Dispatch</h4>
-              <p className="text-[11px] text-slate-400">Free VIP Courier on $150+</p>
+              <p className="text-[11px] text-slate-400">Free VIP Courier on Rs 150+</p>
             </div>
           </div>
 

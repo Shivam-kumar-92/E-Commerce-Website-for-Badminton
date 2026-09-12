@@ -126,10 +126,10 @@ export default function ProductCard({
         <div className="pt-2 border-t border-slate-800 flex items-center justify-between gap-3">
           <div>
             <span className="text-[11px] line-through text-slate-500 font-mono">
-              ${product.originalPrice}
+              Rs {product.originalPrice}
             </span>
             <div className="text-xl font-black text-white font-mono leading-none">
-              ${product.price}
+              Rs {product.price}
             </div>
           </div>
 

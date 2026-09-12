@@ -27,26 +27,26 @@ export default function Hero({ onOpenQuiz, onSelectFeatured, featuredProducts = 
           <div className="lg:col-span-7 space-y-6">
             
             {/* Tag Badge */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-dark-900/90 border border-volt/40 shadow-glow-volt text-xs font-bold text-volt tracking-wide">
-              <span className="w-2 h-2 rounded-full bg-volt animate-ping" />
-              <span>THE GLOBAL DESTINATION FOR SERIOUS BADMINTON WARRIORS</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dark-900/90 border border-volt/40 shadow-glow-volt text-[11px] sm:text-xs font-bold text-volt tracking-wide max-w-full">
+              <span className="w-2 h-2 rounded-full bg-volt animate-ping shrink-0" />
+              <span className="truncate">ELITE BADMINTON WEAPONS & WORKSHOP</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.08]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]">
               DOMINATE THE COURT WITH <span className="text-gradient-volt">ELITE SPEED</span> & RAW POWER.
             </h1>
 
             {/* Subheading */}
-            <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            <p className="text-sm sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
               Explore tournament-grade badminton weapons from <span className="text-white font-semibold">Yonex, Victor, Li-Ning, and Mizuno</span>. Custom-calibrated with electronic tension stringing, 3D spec comparison, and personalized grip customization.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
               <button
                 onClick={onOpenQuiz}
-                className="flex items-center gap-3 px-7 py-4 rounded-2xl bg-gradient-to-r from-volt to-emerald-400 text-dark-950 font-extrabold text-base shadow-glow-volt hover:scale-105 active:scale-95 transition-all group"
+                className="flex items-center justify-center gap-3 px-6 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-volt to-emerald-400 text-dark-950 font-extrabold text-sm sm:text-base shadow-glow-volt hover:scale-105 active:scale-95 transition-all group"
               >
                 <Sparkles className="w-5 h-5 group-hover:rotate-45 transition-transform" />
                 Find My Perfect Racket Quiz
@@ -55,33 +55,33 @@ export default function Hero({ onOpenQuiz, onSelectFeatured, featuredProducts = 
 
               <a
                 href="#catalog"
-                className="flex items-center gap-2.5 px-6 py-4 rounded-2xl glass-panel border border-slate-700 hover:border-slate-500 text-white font-bold text-base hover:bg-white/5 transition-all"
+                className="flex items-center justify-center gap-2 px-5 py-3 sm:py-4 rounded-2xl glass-panel border border-slate-700 hover:border-slate-500 text-white font-bold text-sm sm:text-base hover:bg-white/5 transition-all text-center"
               >
                 Browse All Rackets
               </a>
             </div>
 
             {/* Value Props Bar */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80">
-              <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-volt font-bold text-sm sm:text-base">
-                  <Zap className="w-4 h-4" /> 565 km/h
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-6 border-t border-slate-800/80">
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-1 text-volt font-bold text-xs sm:text-base">
+                  <Zap className="w-3.5 h-3.5 shrink-0" /> 565 km/h
                 </div>
-                <p className="text-xs text-slate-400">World Smash Record Series in Stock</p>
+                <p className="text-[10px] sm:text-xs text-slate-400 leading-tight">World Smash Record</p>
               </div>
 
-              <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-cyan font-bold text-sm sm:text-base">
-                  <Activity className="w-4 h-4" /> Pro Stringing
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-1 text-cyan font-bold text-xs sm:text-base">
+                  <Activity className="w-3.5 h-3.5 shrink-0" /> Pro Strings
                 </div>
-                <p className="text-xs text-slate-400">Electronic 4-Knot 20–35 LBS Calibrated</p>
+                <p className="text-[10px] sm:text-xs text-slate-400 leading-tight">20–35 LBS Calibrated</p>
               </div>
 
-              <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-emerald-400 font-bold text-sm sm:text-base">
-                  <ShieldCheck className="w-4 h-4" /> 100% Genuine
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-1 text-emerald-400 font-bold text-xs sm:text-base">
+                  <ShieldCheck className="w-3.5 h-3.5 shrink-0" /> 100% Legit
                 </div>
-                <p className="text-xs text-slate-400">Official Brand Hologram Guarantee</p>
+                <p className="text-[10px] sm:text-xs text-slate-400 leading-tight">Authorized Official</p>
               </div>
             </div>
 
@@ -119,8 +119,8 @@ export default function Hero({ onOpenQuiz, onSelectFeatured, featuredProducts = 
                       <h3 className="text-lg sm:text-xl font-black">{spotlightRacket.name}</h3>
                     </div>
                     <div className="text-right">
-                      <span className="text-xs line-through text-slate-400">${spotlightRacket.originalPrice}</span>
-                      <p className="text-xl font-extrabold text-volt">${spotlightRacket.price}</p>
+                      <span className="text-xs line-through text-slate-400">Rs {spotlightRacket.originalPrice}</span>
+                      <p className="text-xl font-extrabold text-volt">Rs {spotlightRacket.price}</p>
                     </div>
                   </div>
                 </div>

@@ -177,7 +177,7 @@ export default function OrderTrackingModal({
                         {it.string ? `String: ${it.string.name} (${it.string.tension} LBS)` : 'Unstrung'} • {it.weightClass}
                       </span>
                     </div>
-                    <span className="font-mono font-bold text-white">${((it.itemTotal || it.basePrice) * it.quantity).toFixed(2)}</span>
+                    <span className="font-mono font-bold text-white">Rs {((it.itemTotal || it.basePrice) * it.quantity).toFixed(2)}</span>
                   </div>
                 ))}
 

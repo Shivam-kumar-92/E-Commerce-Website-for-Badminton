@@ -217,7 +217,7 @@ export default function CheckoutModal({
               {/* Order Mini Summary */}
               <div className="p-3 rounded-2xl bg-dark-950 border border-slate-800 flex items-center justify-between text-xs">
                 <span className="text-slate-400 font-semibold">{cartItems.length} Racket Configuration(s)</span>
-                <span className="font-mono font-black text-volt text-sm">${total.toFixed(2)}</span>
+                <span className="font-mono font-black text-volt text-sm">Rs {total.toFixed(2)}</span>
               </div>
 
               <div className="pt-3 flex justify-end">
@@ -304,21 +304,21 @@ export default function CheckoutModal({
               <div className="p-4 rounded-2xl bg-dark-950 border border-slate-800 space-y-1.5 text-xs text-slate-300">
                 <div className="flex justify-between">
                   <span>Subtotal</span>
-                  <span className="font-mono text-white">${subtotal.toFixed(2)}</span>
+                  <span className="font-mono text-white">Rs {subtotal.toFixed(2)}</span>
                 </div>
                 {discountAmount > 0 && (
                   <div className="flex justify-between text-volt">
                     <span>Discount Coupon</span>
-                    <span className="font-mono">-${discountAmount.toFixed(2)}</span>
+                    <span className="font-mono">-Rs {discountAmount.toFixed(2)}</span>
                   </div>
                 )}
                 <div className="flex justify-between">
                   <span>VIP Pro Courier Delivery</span>
-                  <span className="font-mono">{shippingFee === 0 ? 'FREE' : `$${shippingFee.toFixed(2)}`}</span>
+                  <span className="font-mono">{shippingFee === 0 ? 'FREE' : `Rs ${shippingFee.toFixed(2)}`}</span>
                 </div>
                 <div className="flex justify-between text-base font-black text-white pt-2 border-t border-slate-800">
                   <span>Total Amount</span>
-                  <span className="text-volt font-mono">${total.toFixed(2)}</span>
+                  <span className="text-volt font-mono">Rs {total.toFixed(2)}</span>
                 </div>
               </div>
 
@@ -342,7 +342,7 @@ export default function CheckoutModal({
                   ) : (
                     <>
                       <Lock className="w-3.5 h-3.5" />
-                      <span>Authorize Payment of ${total.toFixed(2)}</span>
+                      <span>Authorize Payment of Rs {total.toFixed(2)}</span>
                     </>
                   )}
                 </button>
@@ -382,14 +382,14 @@ export default function CheckoutModal({
                   {createdOrder.items.map((it, idx) => (
                     <div key={idx} className="flex justify-between text-slate-200">
                       <span>{it.quantity}x {it.productName} ({it.string ? `${it.string.tension} lbs` : 'Standard'})</span>
-                      <span className="font-mono">${((it.itemTotal || it.basePrice) * it.quantity).toFixed(2)}</span>
+                      <span className="font-mono">Rs {((it.itemTotal || it.basePrice) * it.quantity).toFixed(2)}</span>
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-between border-t border-slate-800 pt-2 font-black text-white text-sm">
                   <span>Total Paid</span>
-                  <span className="text-volt font-mono">${createdOrder.total.toFixed(2)}</span>
+                  <span className="text-volt font-mono">Rs {createdOrder.total.toFixed(2)}</span>
                 </div>
               </div>
 

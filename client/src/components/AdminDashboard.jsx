@@ -168,7 +168,7 @@ export default function AdminDashboard({
               <span className="text-[10px] uppercase font-bold text-slate-400 flex items-center gap-1">
                 <DollarSign className="w-3.5 h-3.5 text-volt" /> Total Revenue
               </span>
-              <p className="text-xl font-black text-white font-mono">${metrics.revenue?.toFixed(2)}</p>
+              <p className="text-xl font-black text-white font-mono">Rs {metrics.revenue?.toFixed(2)}</p>
             </div>
 
             <div className="p-4 rounded-2xl bg-dark-950 border border-slate-800 space-y-1">
@@ -249,7 +249,7 @@ export default function AdminDashboard({
                         </td>
                         <td className="p-3 font-sans font-semibold text-volt">{prod.brand}</td>
                         <td className="p-3 font-sans text-slate-400">{prod.specs?.balance}</td>
-                        <td className="p-3 text-white font-bold">${prod.price}</td>
+                        <td className="p-3 text-white font-bold">Rs {prod.price}</td>
                         <td className="p-3">
                           <input
                             type="number"
@@ -285,14 +285,14 @@ export default function AdminDashboard({
                       <span className="font-mono font-bold text-volt text-sm">{ord.id}</span>
                       <span className="text-slate-400 ml-2 font-semibold">{ord.customer?.name} ({ord.customer?.email})</span>
                     </div>
-                    <span className="font-mono font-black text-white text-sm">${ord.total?.toFixed(2)}</span>
+                    <span className="font-mono font-black text-white text-sm">Rs {ord.total?.toFixed(2)}</span>
                   </div>
 
                   <div className="space-y-1 text-slate-300">
                     {ord.items?.map((it, i) => (
                       <div key={i} className="flex justify-between">
                         <span>🏸 {it.productName} ({it.string ? `${it.string.name} @ ${it.string.tension} LBS` : 'Unstrung'})</span>
-                        <span className="font-mono">${((it.itemTotal || it.basePrice) * it.quantity).toFixed(2)}</span>
+                        <span className="font-mono">Rs {((it.itemTotal || it.basePrice) * it.quantity).toFixed(2)}</span>
                       </div>
                     ))}
                   </div>
@@ -357,7 +357,7 @@ export default function AdminDashboard({
                 </div>
 
                 <div>
-                  <label className="text-slate-400 block mb-1 font-semibold">Retail Price ($ USD)</label>
+                  <label className="text-slate-400 block mb-1 font-semibold">Retail Price (Rs)</label>
                   <input
                     type="number"
                     step="0.01"

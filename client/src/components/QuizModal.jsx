@@ -145,7 +145,7 @@ export default function QuizModal({
                           <h4 className="font-extrabold text-sm text-white">{product.name}</h4>
                           <span className="text-xs text-slate-400 block">{product.specs?.balance}</span>
                           <span className="text-base font-black text-white font-mono mt-1 block">
-                            ${product.price}
+                            Rs {product.price}
                           </span>
                         </div>
                       </div>
